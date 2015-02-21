@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego de Plataformas en HTML5</title>
+	<link href='http://fonts.googleapis.com/css?family=Jura:400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<div id="info" class='screen'>
+	    <p>Un juego de Sergio Alegre en HTML5 con la librería de Kinectic.JS</p>
+	    <img src="imgs/personajeF.png" class='p'>
+	    <div class="datos">
+	        <h1>Plataformas en el espacio</h1>    
+	        <button class="btn start" id='otro'>Iniciar</button>
+	        <p>
+	            <h3>Instrucciones</h3>
+	            <p>Mover personaje con flechas</p>
+	            <p>Saltar flecha hacia arriba</p>
+	        </p>
+	    </div>
+    </div>
+    <div id="win" class='screen'>
+        <p>Un juego de Sergio Alegre en HTML5 con la librería de Kinectic.JS</p>
+        <img src="imgs/personajeF.png" class='p'>
+        <div class="datos">
+            <h1>¡GANASTE!</h1>    
+            <button class="btn start" id='otro'>Juega de nuevo</button>
+            <p>
+                <h3>Puntaje</h3>
+                <p id='score'></p>
+            </p>
+        </div>
+    </div>
+    <div id="lose" class='screen'>
+        <p>Un juego de Sergio Alegre en HTML5 con la librería de Kinectic.JS</p>
+        <img src="imgs/personajeF.png" class='p'>
+        <div class="datos">
+            <h1>Perdiste</h1>    
+            <p>Pero puedes iniciar de nuevo</p>
+            <button class="btn start"  id='algo'>Reintentar</button>
+            <p>
+                <h3>Instrucciones</h3>
+                <p>Mover personaje con flechas</p>
+                <p>Saltar flecha hacia arriba</p>
+            </p>
+        </div>
+    </div>
+
+	<div id="game"></div> <!-- en esta capa estará todo el stage de kinetic -->
+	<script src='js/preloadjs-0.1.0.min.js'></script>
+	<script src='js/kinetic-v4.3.2.js'></script>  <!-- una librería especial de canvas -->
+	<script src='js/heroe.js'></script>
+	<script src='js/enemigo.js'></script>
+	<script src='js/plataforma.js'></script>
+	<script src='js/moneda.js'></script>
+	<script src='js/puerta.js'></script>
+	<script src='js/llave.js'></script>
+	<script src='js/game.js'></script>
+	<script>
+		var Preloader;
+		var imgsAssets = ['imgs/Heroe.png','imgs/enemy.png','imgs/pattern.png','imgs/puerta.png','imgs/llave.png','imgs/moneda.png','imgs/fondo.jpg'];
+
+		window.addEventListener('load', function(){
+			Preloader = new PreloadJS();
+			Preloader.onProgress = progresoCarga;
+			cargar();
+			var botones = document.getElementsByClassName('start');
+			for(i in botones){
+				var boton = botones[i];
+				boton.addEventListener('click',iniciarJuego);
+			}
+		});
+
+		function cargar(){  //recorre las imagenes del array y las carga
+			while(imgsAssets.length > 0){
+				var url = imgsAssets.shift(); //metodo de arrays que elimina el último elemento ??
+				Preloader.loadFile(url);
+			}
+		}
+
+		function progresoCarga(){
+			if(Preloader.progress ==1){ //todas las imagen cargadas, empieza el juego
+				document.getElementById('info').style.display = 'block';
+				//document.getElementById('game').style.display = 'none';
+			}
+		}
+
+		function iniciarJuego(){
+			document.getElementById('info').style.display = 'none';
+			document.getElementById('lose').style.display = 'none';
+			document.getElementById('win').style.display = 'none';
+			document.getElementById('game').style.display = 'block';
+			nivelUno();
+		}
+	</script>
+	<script src='js/main.js'></script>
+</body>
+</html>
