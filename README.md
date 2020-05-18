@@ -11,7 +11,7 @@ REEMPLAZAR: Juego-HTML5-Kinetic.js-Preload.js, TITULO, DESCRIPCION, DESCRIPCION2
 <br />
 <p align="center">
   <a href="https://github.com/sergioalegre/Juego-HTML5-Kinetic.js-Preload.js">
-    <img src="http://naarean.es/logo.JPG" alt="Logo" width="80" height="80">
+    <img src="http://sergioalegre.es/logo.JPG" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center"><!-- TITULO -->Juego en HTML5 usando Kinetic y Preload JS</h3>
@@ -35,8 +35,8 @@ REEMPLAZAR: Juego-HTML5-Kinetic.js-Preload.js, TITULO, DESCRIPCION, DESCRIPCION2
 Juego en HTML5 usando Kinetic y Preload JS.  <a href="http://naarean.es/Programacion/_JuegoHTML5/">Visita la demo aqui</a>
 <br><br>
 <p align="center">
-  <a href="http://naarean.es/Programacion/_JuegoHTML5/">
-    <img src="http://naarean.es/Programacion/_JuegoHTML5/captura.PNG" alt="Logo" width="360" height="">
+  <a href="http://sergioalegre.es/Programacion/_JuegoHTML5/">
+    <img src="http://sergioalegre.es/Programacion/_JuegoHTML5/captura.PNG" alt="Logo" width="360" height="">
   </a>
 </p>
 
@@ -48,9 +48,10 @@ LinkedIn: https://www.linkedin.com/in/sergioalegre
 
 ### Built With
 <!-- TECNOLOGIAS -->
-* [HTML5](HTML5)
-* [Kinetic](Kinetic)
-* [Preload](Preload)
+* HTML5
+* Kinetic
+* Preload
+* JavaScript
 
 
 ## Getting Started
@@ -85,10 +86,6 @@ Email: sergio.alegre.arribas EN gmail.com
 <br>
 LinkedIn: https://www.linkedin.com/in/sergioalegre
 
-## Acknowledgements
-* []()
-* []()
-* []()
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sergioalegre
