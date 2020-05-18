@@ -32,7 +32,7 @@ REEMPLAZAR: Juego-HTML5-Kinetic.js-Preload.js, TITULO, DESCRIPCION, DESCRIPCION2
 
 ## About The Project & Demo link
 <!-- DESCRIPCION2 --> <!-- DEMO -->
-Juego en HTML5 usando Kinetic y Preload JS.  <a href="http://naarean.es/Programacion/_JuegoHTML5/">Visita la demo aqui</a>
+Juego en HTML5 usando Kinetic y Preload JS.  <a href="http://sergioalegre.es/Programacion/_JuegoHTML5/">Visita la demo aqui</a>
 <br><br>
 <p align="center">
   <a href="http://sergioalegre.es/Programacion/_JuegoHTML5/">
