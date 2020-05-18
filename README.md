@@ -22,7 +22,7 @@ REEMPLAZAR: Juego-HTML5-Kinetic.js-Preload.js, TITULO, DESCRIPCION, DESCRIPCION2
     <a href="https://github.com/sergioalegre/Juego-HTML5-Kinetic.js-Preload.js"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <!-- DEMO --><a href="http://naarean.es/Programacion/_JuegoHTML5/">View Demo</a>
+    <!-- DEMO --><a href="http://sergioalegre.es/Programacion/_JuegoHTML5/">View Demo</a>
     ·
     <a href="https://github.com/sergioalegre/Juego-HTML5-Kinetic.js-Preload.js/issues">Report Bug</a>
     ·
