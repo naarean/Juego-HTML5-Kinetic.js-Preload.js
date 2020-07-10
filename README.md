@@ -40,10 +40,13 @@ Juego en HTML5 usando Kinetic y Preload JS.  <a href="http://sergioalegre.es/Pro
   </a>
 </p>
 
+
 ## Contact
 Email: sergio.alegre.arribas EN gmail.com
 <br>
 LinkedIn: https://www.linkedin.com/in/sergioalegre
+<br>
+Website: http://me.sergioalegre.es
 
 
 ### Built With
